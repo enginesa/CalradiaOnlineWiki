@@ -1,2 +1,2 @@
 # CalradiaOnlineWiki
- Calradia Online için h azırlanmış wiki sayfası
+ Calradia Online için hazırlanmış wiki sayfası
