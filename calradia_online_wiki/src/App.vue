@@ -1,41 +1,34 @@
 <template>
-  <div id="app">
-    <AppHeader></AppHeader>
-    <Home></Home>
+    <div id="app">
+        <!--<h1>geldi</h1>-->
+        <AppHeader></AppHeader>
+        <router-view></router-view>
 
-
-  </div>
+    </div>
 </template>
 
 
 <script>
+    require('./assets/js/standart');
 
+    // const $=window.$;
 
-  import AppHeader from './components/paylasilmis/AppHeader';
-  import Home from './views/Home';
-  export default {
+    import AppHeader from './components/shared/AppHeader';
 
-    components:{
-      AppHeader,
-      Home,
+    export default {
+        components: {
+            AppHeader,
+        },
+
+        mounted() {
+
+        }
+
     }
-
-  }
 </script>
 
 <style>
+    @import './assets/css/style.css';
+    @import './assets/css/responsive.css';
 
-  body{
-    background: url("./assets/images/repeat1.jpg");
-  }
-
-
-  .wt_section{
-    text-align: center;
-    background: url("./assets/images/repeat2.jpg");
-    width: 100%;
-    height: 24px;
-    border: 1px solid #B8B2A9;
-    line-height: 17px;
-  }
 </style>
