@@ -143,5 +143,25 @@ body {
 
 .spyContainer {
     position: relative;
-    margin-top: 75px;
+}
+
+.mainSpyContainer .ozellik:nth-of-type(1n+2){
+    margin-top: 60px;
+}
+
+.mainSpyContainer .ozellik h1{
+    padding-top: 64px;
+}
+.mainSpyContainer .ozellik .top{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.mainSpyContainer .ozellik .top p{
+    font-size: 18px;
+    color: #212529e6;
+    margin-bottom: 50px;
+
+}
+.WtImgExp li p{
+    margin-bottom: 5px;
+    margin-top: 10px;
 }

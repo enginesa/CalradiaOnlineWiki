@@ -1,11 +1,11 @@
 <template>
     <b-container fluid>
         <b-row>
-            <b-col cols="4">
+            <b-col cols="3">
                 <b-navbar v-b-scrollspy:scrollspy-nested class="flex-column navbarLeft">
 
 
-                    <b-nav pills vertical v-b-scrollspy="75">
+                    <b-nav pills vertical v-b-scrollspy="200">
 
                         <div class="navbarLeftHeader" v-for="(item,index) in getSpyContent" :key="index">
 
@@ -16,7 +16,7 @@
                                 <a :class="{active:isSpyContent(item2.key)}"> {{item2.name}}</a>
 
                                 <b-nav pills vertical v-if="item2.subContent && isSpyContent(item2.key)">
-                                    <b-nav-item class="ml-3 my-1" href="#item-1-1"
+                                    <b-nav-item class="ml-3 my-1" :href="'#'+item3.key"
                                                 v-for="(item3,index3) in item2.subContent" :key="index3">
                                         {{item3.name}}
                                     </b-nav-item>
@@ -30,8 +30,11 @@
                 </b-navbar>
             </b-col>
 
-            <b-col cols="8">
+            <b-col cols="6" offset-md="1">
+                <b-breadcrumb :items="topRoadItems"></b-breadcrumb>
+
                 <SpyContainer>
+
                     <keep-alive>
                         <component :is="selectedComponent"></component>
                     </keep-alive>
@@ -51,14 +54,33 @@
     export default {
         components: {
             SpyContainer,
-            baslangic: () => import("../components/pages/wiki/baslangic"),
-            orta: () => import("../components/pages/wiki/orta"),
+            Default: () => import("../components/pages/wiki/Default"),
+            Baslangic: () => import("../components/pages/wiki/baslangic/Baslangic"),
+
+            Klan: () => import("../components/pages/wiki/Klan/Klan"),
+
+
+
+
 
         },
         data() {
             return {
                 urlKey: '',
-                selectedComponent: ''
+                selectedComponent: 'Default',
+                selectedSpyIndex:'',
+                topRoadItems: [
+                    {
+                        text: 'Ana Sayfa',
+                        to: {name: "Home"}
+
+                    },
+                    {
+                        text: 'Wiki',
+                        to: {name: "Wiki"}
+                    }
+
+                ]
 
             }
         },
@@ -77,25 +99,77 @@
             },
             routeGetKey() {
                 this.urlKey = this.$route.params.key;
+                this.selectedComponent = this.urlKey;
 
-                this.selectedComponent=this.urlKey;
+                if(this.urlKey)this.selectedSpyIndex= this.getOneKeySpyContent();
+            },
+            breadCrumbChange() {
+                if (this.urlKey && this.topRoadItems.length === 3) this.topRoadItems.pop();
 
-                console.log(this.urlKey,"oluşturuldu")
+                if (this.urlKey && this.topRoadItems.length === 2) {
+                    var urlInfo = this.getOneKeySpyContent();
 
+                    this.topRoadItems.push({
+                        text: urlInfo.name,
+                        active: false
+                    })
+                } else if (!this.urlKey && this.topRoadItems.length === 3) {
+                    this.topRoadItems.pop();
+                }
+
+            },
+            getOneKeySpyContent() {
+                //url parama göre bilgiyi getirir
+                var content = this.getSpyContent;
+
+                var par = "";
+
+                if (this.urlKey) {
+                    for (var i = 0; i < content.length; i++) {
+
+                        var mainContent = content[i]["mainContent"] ? content[i]["mainContent"] : "";
+
+                        if (mainContent) {
+                            for (var j = 0; j < mainContent.length; j++) {
+
+                                if (this.urlKey === mainContent[j]["key"]) {
+                                    par = mainContent[j];
+                                    break;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                return par;
             }
 
         },
         created() {
-            // console.log(this.$root);
-            this.$root.$on("bv::scrollspy::activate", this.onActivate);
+            // this.$root.$on("bv::scrollspy::activate", this.onActivate);
             this.routeGetKey();
+            this.breadCrumbChange();
+
+
         },
         watch: {
             '$route.params.key': function () {
                 this.routeGetKey();
-            }
+                this.breadCrumbChange();
+
+            },
         }
 
     }
 </script>
+
+<style scoped>
+    .breadcrumb {
+        background-color: transparent !important;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+</style>
 
