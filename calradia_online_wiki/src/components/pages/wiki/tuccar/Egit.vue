@@ -1,14 +1,25 @@
 <template>
-    <div class="ozellik" id="Ticaret">
+    <div class="ozellik" id="tEgit">
         <div class="top">
-            <h1>Ticaret</h1>
+            <h1>Eğit</h1>
             <hr>
             <p>Güçlü ordular kurmak için büyük hazinelere sahip olmak gerekir. Ticaret, dinar kazanmanın en etkili
                 yollarından biridir. Nitekim herkes güçlü bir hazineye sahip olmak ister. Para, gücü de
                 getirecektir.
             </p>
         </div>
-        <h5 style="margin-bottom: 30px">1. Tüccar nasıl yetiştirilir?</h5>
+
+        <h5>Tüccarın Özellikleri<img src="https://calradiaonline.com/public//img/genel_icon/tuccar.png" width="28" height="28"></h5>
+
+        <ul>
+            <li>Haritada herhangi bir şehre malzeme satabilirler ve alabilirler.</li>
+            <li>Tüccar mal taşıma kapasitesi sivil malzemeler için temel olarak 250'dir.</li>
+            <li>Tüccar mal taşıma kapasitesi teçhizatlar için temel olarak 25'dir.</li>
+            <li>Harita üzerindeki oyunculara malzeme gönderebilirsiniz.</li>
+        </ul>
+
+
+        <h5 style="margin-bottom: 30px">1. Tüccar nasıl eğitilir?</h5>
 
         <ul class="WtImgExp">
             <li>
@@ -18,9 +29,9 @@
 
             </li>
             <li>
-                <p>Birlik eğit bölümüne girerek <b class="textRed">İşçi al</b> butonuna tıklayın. </p>
+                <p>Birlik eğit bölümüne girerek <b class="textRed">Özel birim al</b> butonuna tıklayın. </p>
                 <b-img thumbnail fluid
-                       src="https://media.discordapp.net/attachments/657921190936969217/665859337461432320/isci_al.png"></b-img>
+                       src="https://cdn.discordapp.com/attachments/657921190936969217/733375017169190987/Screenshot_16.jpg"></b-img>
             </li>
             <li>
                 <p> Tüccarı işe alarak artık bir <b class="textRed">kervan</b> oluşturabilirsiniz.</p>

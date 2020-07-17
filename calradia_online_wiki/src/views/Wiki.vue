@@ -57,7 +57,12 @@
             Default: () => import("../components/pages/wiki/Default"),
             Baslangic: () => import("../components/pages/wiki/baslangic/Baslangic"),
 
-            Klan: () => import("../components/pages/wiki/Klan/Klan"),
+            Klan: () => import("../components/pages/wiki/klan/Klan"),
+            Hane: () => import("../components/pages/wiki/hane/Hane"),
+            Mulkler: () => import("../components/pages/wiki/mulkler/Mulkler"),
+            KesifEri: () => import("../components/pages/wiki/kesifEri/KesifEri"),
+            Tuccar: () => import("../components/pages/wiki/tuccar/Tuccar"),
+            ZafereUlasanYol: () => import("../components/pages/wiki/zafereUlasanYol/ZafereUlasanYol"),
 
 
 
@@ -147,7 +152,7 @@
 
         },
         created() {
-            // this.$root.$on("bv::scrollspy::activate", this.onActivate);
+            this.$root.$on("bv::scrollspy::activate", this.onActivate);
             this.routeGetKey();
             this.breadCrumbChange();
 

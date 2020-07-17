@@ -29,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,26 +42,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/calradia_online_wiki/src/components/pages/wiki" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/calradia_online_wiki/src/components/pages/wiki/baslangic" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\pages\wiki\Klan" />
-      <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\pages\wiki\baslangic" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\pages\wiki\baslangic" />
       <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\pages\wiki" />
       <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\views" />
       <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\paylasilmis" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\pages\wiki\tuccar" />
+      <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\pages\wiki\kesifEri" />
+      <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\pages\wiki\Klan" />
+      <recent name="C:\xampp\htdocs\wiki\calradia_online_wiki\src\components\pages\wiki\baslangic" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -75,7 +83,8 @@
       <updated>1594708396388</updated>
       <workItem from="1594708419189" duration="25879000" />
       <workItem from="1594793418993" duration="8041000" />
-      <workItem from="1594814916679" duration="25728000" />
+      <workItem from="1594814916679" duration="25731000" />
+      <workItem from="1594894205731" duration="18112000" />
     </task>
     <servers />
   </component>
@@ -95,14 +104,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="828" y="412" key="#ESLint" timestamp="1594902921860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="412" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1594902921860" />
     <state x="845" y="383" key="#Notifications" timestamp="1594709278584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="845" y="383" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1594709278584" />
-    <state x="709" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594845710965">
+    <state x="709" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594925044340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="709" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594845710965" />
+    <state x="709" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594925044340" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594810534852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -115,6 +128,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594715604462" />
+    <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594918380788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594918380788" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594807158442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

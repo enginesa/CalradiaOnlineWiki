@@ -3,7 +3,9 @@
         <Nufus></Nufus>
         <Moral></Moral>
         <Istıkrar></Istıkrar>
-        <Ticaret></Ticaret>
+        <DepoKapasitesi></DepoKapasitesi>
+        <KoyEkonomisi></KoyEkonomisi>
+        <KesifMerkezi></KesifMerkezi>
     </div>
 </template>
 
@@ -11,11 +13,13 @@
     import Nufus from './Nufus';
     import Moral from './Moral';
     import Istıkrar from './Istıkrar';
-    import Ticaret from './Ticaret';
+    import DepoKapasitesi from './DepoKapasitesi';
+    import KoyEkonomisi from './KoyEkonomisi';
+    import KesifMerkezi from './KesifMerkezi';
 
     export default {
         components: {
-            Nufus, Moral, Istıkrar, Ticaret
+            Nufus, Moral, Istıkrar, DepoKapasitesi, KoyEkonomisi,KesifMerkezi
         }
     }
 </script>
