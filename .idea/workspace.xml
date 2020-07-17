@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
+
   <component name="ChangeListManager">
     <list default="true" id="47f76dac-5dab-43ce-9602-3bf31db877fc" name="Default Changelist" comment="" />
-=======
+
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -24,17 +24,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88ad3ccc-16ad-4f9f-ac27-ff6ce3e9fa9e" name="Default Changelist" comment="" />
->>>>>>> 8b46bae6b6af47aef23171ac6b499e24e5ab70b9
+
+  <component name="ChangeListManager">
+    <list default="true" id="47f76dac-5dab-43ce-9602-3bf31db877fc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
+
+
   <component name="TaskManager">
     <servers />
   </component>
-=======
+
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -84,20 +87,11 @@
   <component name="SvnConfiguration">
     <configuration />
   </component>
+
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="88ad3ccc-16ad-4f9f-ac27-ff6ce3e9fa9e" name="Default Changelist" comment="" />
-      <created>1594708396388</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1594708396388</updated>
-      <workItem from="1594708419189" duration="25879000" />
-      <workItem from="1594793418993" duration="8041000" />
-      <workItem from="1594814916679" duration="25731000" />
-      <workItem from="1594894205731" duration="18112000" />
-    </task>
     <servers />
   </component>
+
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -155,5 +149,7 @@
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594709990650" />
   </component>
->>>>>>> 8b46bae6b6af47aef23171ac6b499e24e5ab70b9
+
+
+
 </project>
