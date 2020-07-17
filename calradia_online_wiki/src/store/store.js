@@ -53,6 +53,10 @@ const store = new Vuex.Store({
                                 key: "Kesif-Merkezi",
                                 name: "Keşif Merkezi",
                                 comment: "",
+                            },{
+                                key: "Ticaret-Merkezi",
+                                name: "Ticaret Merkezi",
+                                comment: "",
                             },
 
 
@@ -283,6 +287,18 @@ const store = new Vuex.Store({
                             {
                                 key: "Yon",
                                 name: "Yön",
+                                comment: "",
+                            }
+
+                        ]
+                    }, {
+                        key: "Taktikler",
+                        name: "Taktikler",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "Turler-1",
+                                name: "Türler",
                                 comment: "",
                             }
 

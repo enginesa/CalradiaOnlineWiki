@@ -70,6 +70,7 @@
             SavasDuzeni: () => import("../components/pages/wiki/savasDuzeni/SavasDuzeni"),
             SaldiriYonu: () => import("../components/pages/wiki/saldiriYonu/SaldiriYonu"),
             Insaat: () => import("../components/pages/wiki/insaat/Insaat"),
+            Taktikler: () => import("../components/pages/wiki/taktikler/Taktikler"),
             Premium: () => import("../components/pages/wiki/premium/Premium"),
 
 
