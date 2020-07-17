@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+    .mainContainerFluid {
+        padding-top: 10px !important;
+        height: max-content;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mainContainerFluid .leftSection {
+        order: 1;
+    }
+
+    .mainContainerFluid .rightSection {
+        order: 0;
+    }
+
+    .container .leftSection {
+        text-align: center;
+    }
+
+    .container .rightSection {
+        text-align: center;
+    }
+
+    .container .rightSection img {
+        width: 140px;
+        max-width: 100%;
+    }
+
+    .mainContainerFluid .container .homeHeader {
+        font-size: 44px;
+    }
+
+    .mainContainerFluid .container .leftSection p.explain {
+        font-size: 18px;
+    }
+
+    .mainContainerFluid .container .leftSection ul li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .mainTwoContainerFluid {
+        margin-top: 20px;
+    }
+
+    .mainTwoContainerFluid .newPlayerContainer{
+        padding: 0;
+    }
+}
