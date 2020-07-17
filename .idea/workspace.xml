@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+  <component name="ChangeListManager">
+    <list default="true" id="47f76dac-5dab-43ce-9602-3bf31db877fc" name="Default Changelist" comment="" />
+=======
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,11 +24,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88ad3ccc-16ad-4f9f-ac27-ff6ce3e9fa9e" name="Default Changelist" comment="" />
+>>>>>>> 8b46bae6b6af47aef23171ac6b499e24e5ab70b9
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="TaskManager">
+    <servers />
+  </component>
+=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -145,4 +155,5 @@
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594709990650" />
   </component>
+>>>>>>> 8b46bae6b6af47aef23171ac6b499e24e5ab70b9
 </project>
