@@ -13,59 +13,51 @@
         <br>
         <div class="haneler">
             <b-row md="12" class="text-center">
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/1.png">
-                    <p>Hane 1 <br><b class="textRed">Yurtaşlar</b></p>
+                <b-col md="3" v-for="(item,index) in haneler" :key="index">
+                    <img :src="'https://calradiaonline.com/public//img/haneler/'+item.id+'.png'">
+                    <p>Hane {{item.id}} <br><b class="textRed">{{item.name}}</b></p>
                 </b-col>
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/2.png">
-                    <p>Hane 2 <br><b class="textRed">Cennetin Askerleri</b></p>
-                </b-col>
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/3.png">
-                    <p>Hane 3 <br><b class="textRed">Bozkırın Çocukları</b></p>
-                </b-col>
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/4.png">
-                    <p>Hane 4 <br><b class="textRed">Çiftçiler</b></p>
-                </b-col>
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/5.png">
-                    <p>Hane 5 <br><b class="textRed">Birlik</b></p>
-                </b-col>
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/6.png">
-                    <p>Hane 6 <br><b class="textRed">Aslan Yürekliler</b></p>
-                </b-col>
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/7.png">
-                    <p>Hane 7 <br><b class="textRed">Savaşçılar</b></p>
-                </b-col>
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/8.png">
-                    <p>Hane 8 <br><b class="textRed">Soylular</b></p>
-                </b-col>
-                <b-col md="3" offset-md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/9.png">
-                    <p>Hane 9 <br><b class="textRed">Kahramanlar</b></p>
-                </b-col>
-                <b-col md="3">
-                    <img src="https://calradiaonline.com/public//img/haneler/10.png">
-                    <p>Hane 10 <br><b class="textRed">Süvariler</b></p>
-                </b-col>
+
             </b-row>
         </div>
 
         <h5>Özellikler</h5>
         <ul>
-            <li>Haneler, savaş ve barışa karar verebilir. Klanlardan farkı ise savaş ilanının klana değil, haneye olmasıdır.</li>
-            <li>Her hanenin kendi has bir rengi vardır ve haritadan uzaklaştıkça bir bölgeyi hangi hanenin yönettiğini kolaylıkla anlayabilirsiniz.</li>
-            <li>Haneye bağlı klanlar ne kadar fazla mülk yönetirse hane de o kadar çok <b class="textRed">şan</b> kazanır.</li>
+            <li>Haneler, savaş ve barışa karar verebilir. Klanlardan farkı ise savaş ilanının klana değil, haneye
+                olmasıdır.
+            </li>
+            <li>Her hanenin kendi has bir rengi vardır ve haritadan uzaklaştıkça bir bölgeyi hangi hanenin yönettiğini
+                kolaylıkla anlayabilirsiniz.
+            </li>
+            <li>Haneye bağlı klanlar ne kadar fazla mülk yönetirse hane de o kadar çok <b class="textRed">şan</b>
+                kazanır.
+            </li>
             <li>Haneden ayrılan klanlar 24 saat boyunca başka bir haneye katılamazlar.</li>
         </ul>
     </div>
 
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                haneler: [
+                    {"id": 1 ,name:"Yurtaşlar"},
+                    {"id": 2 ,name:"Cennetin Askerleri"},
+                    {"id": 3 ,name:"Bozkırın Çocukları"},
+                    {"id": 4 ,name:"Çiftçiler"},
+                    {"id": 5 ,name:"Birlik"},
+                    {"id": 6 ,name:"Aslan Yürekliler"},
+                    {"id": 7 ,name:"Savaşçılar"},
+                    {"id": 8 ,name:"Soylular"},
+                    {"id": 9 ,name:"Kahramanlar"},
+                    {"id": 10,name:"Süvariler"}
+                ],
+            }
+        }
+    }
+</script>
 
 <style scoped>
 

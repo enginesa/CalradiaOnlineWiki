@@ -45,5 +45,7 @@
         <p>Görev başarılı olduğu taktirde buna yönelik bildirim alırsınız.</p>
         <b-img thumbnail fluid
                src="https://media.discordapp.net/attachments/666196679753465878/722071792528785448/Screenshot_1.jpg"></b-img>
+
+        <p>Casusluk savaş öncesinde kullanılması, bilgi almak için çok önemlidir.</p>
     </div>
 </template>

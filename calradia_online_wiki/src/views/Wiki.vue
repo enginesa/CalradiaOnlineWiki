@@ -56,13 +56,23 @@
             SpyContainer,
             Default: () => import("../components/pages/wiki/Default"),
             Baslangic: () => import("../components/pages/wiki/baslangic/Baslangic"),
-
+            Sandik: () => import("../components/pages/wiki/sandik/Sandik"),
+            YeniKoy: () => import("../components/pages/wiki/yeniKoy/YeniKoy"),
             Klan: () => import("../components/pages/wiki/klan/Klan"),
             Hane: () => import("../components/pages/wiki/hane/Hane"),
             Mulkler: () => import("../components/pages/wiki/mulkler/Mulkler"),
             KesifEri: () => import("../components/pages/wiki/kesifEri/KesifEri"),
             Tuccar: () => import("../components/pages/wiki/tuccar/Tuccar"),
+            Haydutlar: () => import("../components/pages/wiki/haydutlar/Haydutlar"),
+            Bosslar: () => import("../components/pages/wiki/bosslar/Bosslar"),
             ZafereUlasanYol: () => import("../components/pages/wiki/zafereUlasanYol/ZafereUlasanYol"),
+            Birlikler: () => import("../components/pages/wiki/birlikler/Birlikler"),
+            SavasDuzeni: () => import("../components/pages/wiki/savasDuzeni/SavasDuzeni"),
+            SaldiriYonu: () => import("../components/pages/wiki/saldiriYonu/SaldiriYonu"),
+            Insaat: () => import("../components/pages/wiki/insaat/Insaat"),
+            Premium: () => import("../components/pages/wiki/premium/Premium"),
+
+
 
 
 
@@ -72,6 +82,7 @@
         data() {
             return {
                 urlKey: '',
+                // selectedComponent: 'Default',
                 selectedComponent: 'Default',
                 selectedSpyIndex:'',
                 topRoadItems: [

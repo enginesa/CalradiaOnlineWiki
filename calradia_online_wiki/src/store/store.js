@@ -5,9 +5,9 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     state: {
         spyContent: [
-            //yeni oyuncular
+            //Köy Hakkında
             {
-                name: "Yeni Oyuncular",
+                name: "Genel",
                 mainContent: [
                     {
                         key: "Baslangic",
@@ -28,8 +28,20 @@ const store = new Vuex.Store({
                                 comment: "",
                             },
                             {
-                                key: "Ticaret",
-                                name: "Ticaret",
+                                key: "Koy-Ekonomisi",
+                                name: "Köy Ekonomisi",
+                                comment: "",
+                            }
+                        ]
+                    },
+                    {
+                        key: "Insaat",
+                        name: "İnşaat",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "Bina-Sayilari",
+                                name: "Bina Sayıları",
                                 comment: "",
                             },
                             {
@@ -38,21 +50,134 @@ const store = new Vuex.Store({
                                 comment: "",
                             },
                             {
-                                key: "Koy-Ekonomisi",
-                                name: "Köy Ekonomisi",
-                                comment: "",
-                            }, {
                                 key: "Kesif-Merkezi",
                                 name: "Keşif Merkezi",
                                 comment: "",
                             },
+
+
+                        ]
+                    },
+                    {
+                        key: "Sandik",
+                        name: "Sandık",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "Turler",
+                                name: "Türler",
+                                comment: "",
+                            },
+                        ]
+                    },        {
+                        key: "Yeni-Koy",
+                        name: "Yeni Köy",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "Bos-Arazi",
+                                name: "Boş Arazi",
+                                comment: "",
+                            },
+
+
+
                         ]
                     },
                 ],
             },
+
+            //Harita Üzerinde İşlemler
+            {
+                name: "Harita Üzerinde İşlemler",
+                mainContent: [
+                    {
+                        key: "Mulkler",
+                        name: "Mülkler",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "Kale",
+                                name: "Kale",
+                                comment: "",
+                            }, {
+                                key: "Sehir",
+                                name: "Şehir",
+                                comment: "",
+                            }, {
+                                key: "Kale-Sehir-Binalari",
+                                name: "Kale ve Şehir Binaları",
+                                comment: "",
+                            }, {
+                                key: "Mulk-Kapasitesi",
+                                name: "Mülk Kapasitesi",
+                                comment: "",
+                            },
+
+                        ]
+                    },
+                    {
+                        key: "Kesif-Eri",
+                        name: "Keşif Eri",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "kEgit",
+                                name: "Eğit",
+                                comment: "",
+                            },
+                            {
+                                key: "Casusluk",
+                                name: "Casusluk",
+                                comment: "",
+                            }
+
+                        ]
+                    }, {
+                        key: "Tuccar",
+                        name: "Tüccar",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "tEgit",
+                                name: "Eğit",
+                                comment: "",
+                            }
+
+                        ]
+                    },
+                    {
+                        key: "Haydutlar",
+                        name: "Haydutlar",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "hTurler",
+                                name: "Türler",
+                                comment: "",
+                            }
+
+                        ]
+                    }, {
+                        key: "Bosslar",
+                        name: "Bosslar",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "bTurler",
+                                name: "Türler",
+                                comment: "",
+                            }
+
+                        ]
+                    },
+
+                ],
+            },
+
             //birlik işlemleri
             {
-                name: "Birlik İşemleri",
+                name: "Birlik İşlemleri",
                 mainContent: [
                     {
                         key: "Zafere-Ulasan-Yol",
@@ -116,69 +241,80 @@ const store = new Vuex.Store({
                     }
                 ],
             },
-            //Harita Üzerinde İşlemler
+
+            //Savaş
             {
-                name: "Harita Üzerinde İşlemler",
+                name: "Savaş",
                 mainContent: [
                     {
-                        key: "Mulkler",
-                        name: "Mülkler",
+                        key: "Birlikler",
+                        name: "Birlikler",
                         comment: "",
                         subContent: [
                             {
-                                key: "Kale",
-                                name: "Kale",
+                                key: "Turler",
+                                name: "Türler",
                                 comment: "",
                             }, {
-                                key: "Sehir",
-                                name: "Şehir",
+                                key: "Avantajlar",
+                                name: "Avantajlar",
                                 comment: "",
-                            },{
-                                key: "Kale-Sehir-Binalari",
-                                name: "Kale ve Şehir Binaları",
-                                comment: "",
-                            }, {
-                                key: "Mulk-Kapasitesi",
-                                name: "Mülk Kapasitesi",
-                                comment: "",
-                            },
+                            }
 
                         ]
                     },
                     {
-                        key: "Kesif-Eri",
-                        name: "Keşif Eri",
+                        key: "Savas-Duzeni",
+                        name: "Savaş Düzeni",
                         comment: "",
                         subContent: [
                             {
-                                key: "kEgit",
-                                name: "Eğit",
-                                comment: "",
-                            },
-                            {
-                                key: "Casusluk",
-                                name: "Casusluk",
+                                key: "Duzen",
+                                name: "Düzen",
                                 comment: "",
                             }
 
                         ]
-                    },     {
-                        key: "Tuccar",
-                        name: "Tüccar",
+                    }, {
+                        key: "Saldiri-Yonu",
+                        name: "Saldırı Yönü",
                         comment: "",
                         subContent: [
                             {
-                                key: "tEgit",
-                                name: "Eğit",
+                                key: "Yon",
+                                name: "Yön",
                                 comment: "",
                             }
 
                         ]
                     },
 
-                ],
-            }
 
+                ],
+            },
+
+            //Market
+            {
+                name: "Market",
+                mainContent: [
+                    {
+                        key: "Premium",
+                        name: "Premium",
+                        comment: "",
+                        subContent: [
+                            {
+                                key: "Ozellikler",
+                                name: "Özellikler",
+                                comment: "",
+                            }
+
+                        ]
+                    },
+
+
+
+                ],
+            },
         ]
 
     },
