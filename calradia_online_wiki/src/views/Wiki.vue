@@ -1,38 +1,14 @@
 <template>
     <b-container fluid>
         <b-row>
-            <b-col cols="3">
-                <b-navbar v-b-scrollspy:scrollspy-nested class="flex-column navbarLeft">
 
+            <b-col cols="3" class="d-none d-md-block d-lg-block .d-xl-none">
+                <NavbarLeft></NavbarLeft>
 
-                    <b-nav pills vertical v-b-scrollspy="200">
-
-                        <div class="navbarLeftHeader" v-for="(item,index) in getSpyContent" :key="index">
-
-                            <b-navbar-brand>{{item.name}}</b-navbar-brand>
-
-                            <router-link tag="li" :to="{ name: 'WikiKey', params: { key: item2.key }}"
-                                         v-for="(item2,index2) in item.mainContent" :key="index2">
-                                <a :class="{active:isSpyContent(item2.key)}"> {{item2.name}}</a>
-
-                                <b-nav pills vertical v-if="item2.subContent && isSpyContent(item2.key)">
-                                    <b-nav-item class="ml-3 my-1" :href="'#'+item3.key"
-                                                v-for="(item3,index3) in item2.subContent" :key="index3">
-                                        {{item3.name}}
-                                    </b-nav-item>
-                                </b-nav>
-
-                            </router-link>
-
-                        </div>
-
-                    </b-nav>
-                </b-navbar>
             </b-col>
 
-            <b-col cols="6" offset-md="1">
+            <b-col sm="12" md="7" lg="6" offset-md="1">
                 <b-breadcrumb :items="topRoadItems"></b-breadcrumb>
-
                 <SpyContainer>
 
                     <keep-alive>
@@ -48,12 +24,17 @@
 
 
     import SpyContainer from '../components/pages/SpyContainer';
+    import NavbarLeft from '../components/shared/NavbarLeft';
 
-    import {mapGetters} from 'vuex'
+
+    import wikiMixins from '../mixins/wikiMixins';
+
 
     export default {
+        mixins: [wikiMixins],
         components: {
             SpyContainer,
+            NavbarLeft,
             Default: () => import("../components/pages/wiki/Default"),
             Baslangic: () => import("../components/pages/wiki/baslangic/Baslangic"),
             Sandik: () => import("../components/pages/wiki/sandik/Sandik"),
@@ -73,110 +54,18 @@
             Taktikler: () => import("../components/pages/wiki/taktikler/Taktikler"),
             Premium: () => import("../components/pages/wiki/premium/Premium"),
 
-
-
-
-
-
-
         },
         data() {
             return {
-                urlKey: '',
-                // selectedComponent: 'Default',
+
                 selectedComponent: 'Default',
-                selectedSpyIndex:'',
-                topRoadItems: [
-                    {
-                        text: 'Ana Sayfa',
-                        to: {name: "Home"}
 
-                    },
-                    {
-                        text: 'Wiki',
-                        to: {name: "Wiki"}
-                    }
-
-                ]
 
             }
         },
-        computed: {
-            ...mapGetters([
-                'getSpyContent',
-            ]),
-
-        },
-        methods: {
-            onActivate(target) {
-                window.history.pushState("", "", target);
-            },
-            isSpyContent(key) {
-                return this.urlKey === key
-            },
-            routeGetKey() {
-                this.urlKey = this.$route.params.key;
-                this.selectedComponent = this.urlKey;
-
-                if(this.urlKey)this.selectedSpyIndex= this.getOneKeySpyContent();
-            },
-            breadCrumbChange() {
-                if (this.urlKey && this.topRoadItems.length === 3) this.topRoadItems.pop();
-
-                if (this.urlKey && this.topRoadItems.length === 2) {
-                    var urlInfo = this.getOneKeySpyContent();
-
-                    this.topRoadItems.push({
-                        text: urlInfo.name,
-                        active: false
-                    })
-                } else if (!this.urlKey && this.topRoadItems.length === 3) {
-                    this.topRoadItems.pop();
-                }
-
-            },
-            getOneKeySpyContent() {
-                //url parama göre bilgiyi getirir
-                var content = this.getSpyContent;
-
-                var par = "";
-
-                if (this.urlKey) {
-                    for (var i = 0; i < content.length; i++) {
-
-                        var mainContent = content[i]["mainContent"] ? content[i]["mainContent"] : "";
-
-                        if (mainContent) {
-                            for (var j = 0; j < mainContent.length; j++) {
-
-                                if (this.urlKey === mainContent[j]["key"]) {
-                                    par = mainContent[j];
-                                    break;
-                                }
-
-                            }
-                        }
-                    }
-                }
-
-                return par;
-            }
-
-        },
-        created() {
-            this.$root.$on("bv::scrollspy::activate", this.onActivate);
-            this.routeGetKey();
-            this.breadCrumbChange();
 
 
-        },
-        watch: {
-            '$route.params.key': function () {
-                this.routeGetKey();
-                this.breadCrumbChange();
 
-            },
-        }
 
     }
 </script>

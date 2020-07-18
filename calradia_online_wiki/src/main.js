@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import store from './store/store';
 
+import VueMeta from 'vue-meta'
+Vue.use(VueMeta)
+
 
 import router from './router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'

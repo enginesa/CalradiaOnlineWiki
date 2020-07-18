@@ -1,7 +1,11 @@
 <template>
     <div id="app">
         <!--<h1>geldi</h1>-->
+
+
+        <MobilNavbarLeft></MobilNavbarLeft>
         <AppHeader></AppHeader>
+
         <router-view></router-view>
 
     </div>
@@ -11,20 +15,57 @@
 <script>
     require('./assets/js/standart');
 
-    // const $=window.$;
-
     import AppHeader from './components/shared/AppHeader';
 
+    import MobilNavbarLeft from './components/shared/MobilNavbarLeft';
+
+    import wikiMixins from './mixins/wikiMixins';
+
+
     export default {
-        components: {
-            AppHeader,
+        mixins: [wikiMixins],
+        metaInfo() {
+            return {
+                title: 'Calradia Online ' + this.metaTitle,
+            }
+
+        },
+        data() {
+            return {
+                metaTitle: ""
+            }
         },
 
-        mounted() {
 
+        components: {
+            AppHeader, MobilNavbarLeft
+        },
+        methods: {
+            metaChange() {
+                var urlContent = this.getOneKeySpyContent();
+
+                if (urlContent.name) {
+                    this.metaTitle = urlContent.name;
+                } else {
+                    this.metaTitle = this.$route.name;
+                }
+            }
+        },
+
+        created() {
+            this.metaChange();
+
+        },
+        watch: {
+            '$route.params': function () {
+
+                this.metaChange();
+            },
         }
 
     }
+
+
 </script>
 
 <style>

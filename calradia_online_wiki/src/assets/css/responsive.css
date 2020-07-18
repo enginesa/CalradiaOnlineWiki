@@ -13,7 +13,9 @@
     .mainContainerFluid .rightSection {
         order: 0;
     }
-
+    .mainContainerFluid .container .rightSection{
+        padding-top: 65px;
+    }
     .container .leftSection {
         text-align: center;
     }

@@ -115,10 +115,19 @@ body {
 
 .navbarLeft ul li a {
     font-family: 'Bai Jamjuree', sans-serif;
-
     color: #484848f7;
-
 }
+
+.mobilNavbarLeft {
+    position: unset !important;
+    padding-left: 15px;
+}
+
+.mobilNavbarLeft .active a{
+    color: #de4040 !important;
+    font-weight: 600;
+}
+
 
 .navbarLeft ul li a.active {
     background-color: transparent !important;

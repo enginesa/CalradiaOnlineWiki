@@ -36,10 +36,10 @@
         <b-container fluid class="mainTwoContainerFluid">
             <b-container class="newPlayerContainer">
                 <h4 class="textRed">Yeni Oyuncular</h4>
-                <p>Oyuna yeni başladıysanız hiç bir fikriniiz yoksa ne yapacağınıza karar vermeediyseniz hemen wiki
-                    sayfasını incelemeye başlayın
-                    Oyuna yeni başladıysanız hiç bir fikriniiz yoksa ne yapacağınıza karar vermeediyseniz hemen wiki
-                    sayfasını incelemeye başlayın</p>
+                <p>Calradia Online Wiki'ye hoşgeldiniz. Burası Calradia Online ile ilgili detaylı bilgilerin
+                    bulunabileceği ve yeni oyuncuların hızlı bir şekilde oyunu öğrenebilmesi için hazırlanmıştır. <br>
+                <b>Oyuna yeni başladıysanız hemen öğrenmeye başlayın!</b>
+                </p>
 
                 <router-link :to="{ name: 'Wiki'}">
                     <b-button variant="outline-danger">Wiki</b-button>
@@ -49,4 +49,5 @@
         </b-container>
     </section>
 </template>
+
 

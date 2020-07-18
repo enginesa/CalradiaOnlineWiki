@@ -6,11 +6,11 @@ import Wiki from './../views/Wiki'
 Vue.use(VueRouter)
 
 const routes = [
-    {path: '', component: Home, name: "Home"},
+    {path: '', component: Home, name: "Ana Sayfa"},
     // {path: '/wiki', component: Wiki,name:"Wiki"},
 
     {
-        path: '/wiki/:key', component: Wiki, name: "WikiKey",
+        path: '/wiki/:key', component: Wiki, name: "WikiKey",realName:"Ana Sayfa",
         children: [
             {
                 // UserProfile will be rendered inside User's <router-view>
@@ -21,7 +21,7 @@ const routes = [
             }
         ]
     },
-    {path: '*', redirect: {name: "Home"}}
+    {path: '*', redirect: {name: "Ana Sayfa"}}
 
 
 ]

@@ -4,6 +4,20 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 const store = new Vuex.Store({
     state: {
+        navbarItem:[
+            {
+                name: "Ana Sayfa",
+                urlName:"Ana Sayfa",
+                isExact:true,
+            },
+            {
+                name: "Wiki",
+                urlName:"Wiki",
+                isExact:false,
+            }
+        ],
+
+
         spyContent: [
             //Köy Hakkında
             {
@@ -337,6 +351,9 @@ const store = new Vuex.Store({
     getters: {
         getSpyContent(state) {
             return state.spyContent;
+        },
+        getNavbarItem(state) {
+            return state.navbarItem;
         }
     },
     mutations: {

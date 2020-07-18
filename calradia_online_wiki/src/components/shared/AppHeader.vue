@@ -1,32 +1,39 @@
 <template>
     <div>
         <b-navbar toggleable="lg" type="dark" class="bgRed mainNavbar" fixed="top">
-            <router-link tag="b-navbar-brand" class="navbarLogo" :to="{ name: 'Home'}" exact>
+
+            <b-navbar-toggle target="" v-b-toggle.sidebar-backdrop></b-navbar-toggle>
+
+            <router-link tag="b-navbar-brand" class="navbarLogo mx-auto" :to="{ name: 'Ana Sayfa'}" exact>
                 <img src="../../assets/images/logo.png" width="54">
             </router-link>
 
 
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
 
-                    <router-link tag="b-nav-item" active-class="active" :to="{ name: 'Home'}" exact>
-                        Başlangıç
+                    <router-link tag="b-nav-item" active-class="active" :to="{ name: item.urlName}" :exact="item.isExact" v-for="(item,index) in getNavbarItem" :key="index">
+                        {{item.name}}
                     </router-link>
-
-
-                    <router-link tag="b-nav-item"  active-class="active" :to="{ name: 'Wiki'}">
-                        Wiki
-                    </router-link>
-
-
-
                 </b-navbar-nav>
             </b-collapse>
+
         </b-navbar>
     </div>
 </template>
+
+<script>
+    import {mapGetters} from 'vuex';
+    export default {
+        computed: {
+            ...mapGetters([
+                'getNavbarItem',
+            ]),
+
+        },
+
+    }
+</script>
 
 <style>
     .mainNavbar{
@@ -35,5 +42,8 @@
     }
     .mainNavbar .navbarLogo{
         margin-right: 0;
+    }
+    .navbar-toggler{
+        position: absolute;
     }
 </style>
