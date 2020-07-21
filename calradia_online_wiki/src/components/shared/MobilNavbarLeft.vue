@@ -47,8 +47,9 @@
         },
         methods:{
           mobilNavbarControl(){
-              if (this.$route.fullPath === '/wiki') this.selectedComponent = 'NavbarLeft';
-              else if(this.$route.fullPath ==='/') this.selectedComponent='';
+              // if (this.$route.fullPath === '/wiki') this.selectedComponent = 'NavbarLeft';
+              // else if(this.$route.fullPath ==='/') this.selectedComponent='';
+              this.selectedComponent='NavbarLeft';
           }
         },
         created() {

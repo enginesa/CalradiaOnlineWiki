@@ -3,8 +3,7 @@
         <div class="top">
             <h1>Roller</h1>
             <hr>
-            <p>Açıklama eklenecekAçıklama eklenecekAçıklama eklenecekAçıklama eklenecekAçıklama eklenecekAçıklama
-                eklenecekAçıklama eklenecekAçıklama eklenecek
+            <p>
             </p>
         </div>
         <h5>Klan Lideri</h5>

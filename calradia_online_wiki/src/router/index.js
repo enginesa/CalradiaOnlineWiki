@@ -10,7 +10,7 @@ const routes = [
     // {path: '/wiki', component: Wiki,name:"Wiki"},
 
     {
-        path: '/wiki/:key', component: Wiki, name: "WikiKey",realName:"Ana Sayfa",
+        path: '/wiki/:key', component: Wiki, name: "WikiKey",
         children: [
             {
                 // UserProfile will be rendered inside User's <router-view>

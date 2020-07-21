@@ -74,7 +74,6 @@ export default {
     created(){
         this.routeGetKey();
         this.breadCrumbChange();
-        console.log("başladı")
     },
     watch: {
         '$route.params.key': function () {

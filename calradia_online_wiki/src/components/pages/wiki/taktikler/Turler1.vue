@@ -18,10 +18,10 @@
                     <img src="https://calradiaonline.com/public/img/taktikler/1.png">
                     <p><b class="textRed">Kapanma Taktiği</b></p>
                     <ul>
-                        <li>Çavuş'un saldırı gücü +25 artar.</li>
-                        <li>Çavuş'un savunma gücü +25 artar.</li>
+                        <li>Çavuşun saldırı gücü +25 artar.</li>
+                        <li>Çavuşun savunma gücü +25 artar.</li>
                         <li>Topyekün Saldırı taktiğine karşı +25% daha güçlü.</li>
-                        <li> Kurt Kapanı taktiğine karşı -25% dezavantajlı.</li>
+                        <li>Kurt Kapanı taktiğine karşı -25% dezavantajlı.</li>
                     </ul>
                 </b-col>
                 <b-col md="6">

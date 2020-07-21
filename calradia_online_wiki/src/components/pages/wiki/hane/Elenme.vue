@@ -11,7 +11,7 @@
             <li>Şan yarışında sadece iki hane kalmışsa haneler elenmez.</li>
         </ul>
         <br>
-        <p><b>Not</b>: Elenen haneye klan klan katılamaz.</p>
+        <p><b>Not</b>: Elenen haneye klan katılamaz.</p>
         <b-img thumbnail fluid src="https://cdn.discordapp.com/attachments/657921190936969217/733312069918523462/Screenshot_9.jpg"></b-img>
     </div>
 

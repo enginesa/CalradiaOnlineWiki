@@ -34,7 +34,7 @@
 
         <br>
         <br>
-        <h5>Saldırı Düzeni</h5>
+        <h5>Savunma Düzeni</h5>
         <b-img thumbnail fluid src="https://media.discordapp.net/attachments/666196679753465878/694990370685321357/Screenshot_4.jpg"></b-img>
 
         <ul>

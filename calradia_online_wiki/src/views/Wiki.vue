@@ -57,10 +57,7 @@
         },
         data() {
             return {
-
                 selectedComponent: 'Default',
-
-
             }
         },
 

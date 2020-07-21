@@ -39,14 +39,15 @@
         </p>
 
         <ul>
-            <li>    İlk olarak satmak istediğiniz ürünün miktarını girin.</li>
-            <li>   Sistem otomatik olarak fiyat belirleyecektir, bunu isteğinize uygun olarak değiştirin.</li>
-            <li>   Son olarak güncelle butonuna tıklayın.</li>
+            <li>İlk olarak satmak istediğiniz ürünün miktarını girin.</li>
+            <li>Sistem otomatik olarak fiyat belirleyecektir, bunu isteğinize uygun olarak değiştirin.</li>
+            <li>Son olarak güncelle butonuna tıklayın.</li>
         </ul>
 
         <b-img thumbnail fluid
                src="https://media.discordapp.net/attachments/657921190936969217/692100007112736768/urunlerim.png"></b-img>
 
+        <p>Ürünleri hızlı bir şekilde elinizden çıkarabilirsiniz.</p>
 
 
 

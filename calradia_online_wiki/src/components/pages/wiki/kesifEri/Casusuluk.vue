@@ -1,7 +1,7 @@
 <template>
     <div class="ozellik" id="Casusluk">
         <div class="top">
-            <h1>Casusuluk</h1>
+            <h1>Casusluk</h1>
             <hr>
             <p>Savaş öncesi saldıracağınız yere ile ilgili bilgi edinmek ve bu bilgiye göre saldırı yapmak savaşın
                 sonucu değiştirebilir.

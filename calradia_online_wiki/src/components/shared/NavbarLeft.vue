@@ -1,5 +1,6 @@
 <template>
-    <b-navbar v-b-scrollspy:scrollspy-nested class="flex-column navbarLeft">
+<!--    <b-navbar v-b-scrollspy:scrollspy-nested class="flex-column navbarLeft">-->
+    <b-navbar  class="flex-column navbarLeft">
         <b-nav pills vertical v-b-scrollspy="200">
 
             <div class="navbarLeftHeader" v-for="(item,index) in getSpyContent" :key="index">

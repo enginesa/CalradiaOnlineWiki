@@ -4,8 +4,7 @@
             <h1>Diplomasi</h1>
             <hr>
             <p>
-                Açıklama eklenecekAçıklama eklenecekAçıklama eklenecekAçıklama eklenecekAçıklama eklenecekAçıklama
-                eklenecekAçıklama eklenecekAçıklama eklenecek
+
             </p>
         </div>
         <h5>Diplomasi Özellikleri</h5>
